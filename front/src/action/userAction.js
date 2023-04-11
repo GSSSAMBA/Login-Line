@@ -23,7 +23,8 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://loginregister-2ifr.onrender.com/api/users/login",
+      // "https://loginregister-2ifr.onrender.com/api/users/login",
+      "https://loginregister1.onrender.com/api/users/login",
       { email, password },
       config
     );
@@ -58,7 +59,8 @@ export const register = (name, email, password, pic) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://loginregister-2ifr.onrender.com/api/users",
+      "https://loginregister1.onrender.com/api/users",
+      // "https://loginregister-2ifr.onrender.com/api/users",
       { name, pic, email, password },
       config
     );
@@ -95,7 +97,8 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.post(
-      "https://loginregister-2ifr.onrender.com/api/users/updateprofile",
+      "https://loginregister1.onrender.com/api/users/updateprofile",
+      // "https://loginregister-2ifr.onrender.com/api/users/updateprofile",
       user,
       config
     );
